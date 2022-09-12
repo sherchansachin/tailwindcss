@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("https://raw.githubusercontent.com/bradtraversy/tailwind-course-projects/main/all-project-assets/clipboard/images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url("https://raw.githubusercontent.com/bradtraversy/tailwind-course-projects/main/all-project-assets/clipboard/images/bg-header-mobile.png");
+  }
+}
