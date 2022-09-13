@@ -410,6 +410,22 @@ video {
   height: auto;
 }
 
+h3 {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(210 10% 33% / var(--tw-text-opacity));
+}
+
+@media (min-width: 786px) {
+  h3 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -551,14 +567,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .my-4 {
@@ -566,16 +589,21 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .mb-40 {
   margin-bottom: 10rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .flex {
@@ -584,10 +612,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .max-w-3xl {
@@ -639,11 +663,6 @@ video {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -654,17 +673,12 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .capitalize {
   text-transform: capitalize;
 }
 
-.text-darkGrayishBlue {
-  --tw-text-opacity: 1;
-  color: hsl(210 10% 33% / var(--tw-text-opacity));
+.leading-9 {
+  line-height: 2.25rem;
 }
 
 .text-grayishBlue {
@@ -687,6 +701,15 @@ video {
   transition-duration: 200ms;
 }
 
+.section-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: center;
+}
+
 body {
   background-image: url("https://raw.githubusercontent.com/bradtraversy/tailwind-course-projects/main/all-project-assets/clipboard/images/bg-header-desktop.png");
   background-repeat: no-repeat;
@@ -704,6 +727,14 @@ body {
 }
 
 @media (min-width: 786px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -720,8 +751,9 @@ body {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .md\:space-x-32 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(8rem * var(--tw-space-x-reverse));
+    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }

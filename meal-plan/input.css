@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+}
+
 body {
   background-image: url("https://raw.githubusercontent.com/bradtraversy/tailwind-course-projects/main/all-project-assets/clipboard/images/bg-header-desktop.png");
   background-repeat: no-repeat;
