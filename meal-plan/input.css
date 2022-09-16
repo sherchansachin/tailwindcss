@@ -27,3 +27,8 @@ body {
     background-image: url("https://raw.githubusercontent.com/bradtraversy/tailwind-course-projects/main/all-project-assets/clipboard/images/bg-header-mobile.png");
   }
 }
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
